@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <div class="card">
+            <div class="content">
+                <img src="img_1.JPG" alt="profile_img">
+                <h2>Someone Famous<br><span>Website Developeer</span></h2>
+            </div>
+            <ul class="navigation">
+                <li>
+                    Edit Profile
+                </li>
+                <li>
+                    Inbox
+                </li>
+                <li>
+                    Settings
+                </li>
+                <li>
+                    Support
+                </li>
+                <li>
+                    Logout
+                </li>
+            </ul>
+            <div class="toggle">
+                <h3>+</h3>
+            </div>
+            <div class="toggle1">
+                <h3>#</h3>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        var card = document.querySelector('.card');
+        var sec = document.querySelector('.sec');
+        var cardtoggle = document.querySelector('.toggle');
+        var cardtoggle1 = document.querySelector('.toggle1');
+        cardtoggle.onclick = function() {
+            card.classList.toggle('active');
+        }
+        cardtoggle1.onclick = function() {
+            sec.classList.toggle('dark');
+        }
+    </script>
+</body>
+</html>
